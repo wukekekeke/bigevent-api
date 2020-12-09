@@ -16,7 +16,7 @@ function db(sql, params = null) {
     conn.end();
   }).catch((err) => {
     //统一做错误处理
-    console.log(err.message);
+    console.log(err);
   });
 }
 
