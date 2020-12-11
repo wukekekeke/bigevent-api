@@ -3,6 +3,7 @@ const router = express.Router();
 const db = require("../db");
 const utility = require("utility");
 
+// 获取用户信息
 router.get("/userinfo", async (req, res) => {
   // res.send("测试，需要token数据才能访问");
   //通过req.user拿到加密token时存的值
